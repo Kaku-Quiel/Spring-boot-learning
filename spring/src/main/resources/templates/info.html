@@ -12,9 +12,15 @@
     <br>
     <hr>
     <br>
-
-    <h1 th:text="${titulo}"></h1>
-    <h2 th:text="${ip}"></h2> 
-    <p th:text="${nombre}"></p>
+    
+    <ul>
+        <li><strong>Nombre: </strong> <span th:text="${empleado.getNombre()}"></span></li>
+        <li><strong>Apellido: </strong> <span th:text="${empleado.getApellido()}"></span></li>
+        <li><strong>Puesto: </strong> <span th:text="${empleado.getPuesto()}"></span></li>
+        <li><strong>Dirección: </strong> <span th:text="${empleado.getDireccion()}"></span></li>
+        <li><strong>Teléfono: </strong> <span th:text="${empleado.getTelefono()}"></span></li>
+        <li><strong>ID: </strong> <span th:text="${empleado.getId()}"></span></li>
+        <li><strong>Edad: </strong> <span th:text="${empleado.getEdad()}"></span></li>
+    </ul>
 </body>
 </html>
