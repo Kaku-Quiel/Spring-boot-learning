@@ -10,7 +10,10 @@ public class Empleado {
     private int telefono;
     private int id;
 
-    public Empleado(String nombre, String apellido, String puesto, String direccion, int edad, int telefono, int id) {
+
+    private String pelo;
+
+    public Empleado(String nombre, String apellido, String puesto, String direccion, int edad, int telefono, int id, String pelo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.puesto = puesto;
@@ -18,7 +21,17 @@ public class Empleado {
         this.edad = edad;
         this.telefono = telefono;
         this.id = id;
+        this.pelo = pelo;
     }
+
+    public String getPelo() {
+        return pelo;
+    }
+
+    public void setPelo(String pelo) {
+        this.pelo = pelo;
+    }
+
     public String getNombre() {
         return nombre;
     }

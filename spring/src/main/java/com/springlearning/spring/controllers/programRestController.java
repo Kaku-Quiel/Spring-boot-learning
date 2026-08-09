@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.springlearning.spring.models.Empleado;
 import com.springlearning.spring.models.DTO.DTO;
 
-import org.springframework.web.bind.annotation.RequestParam;
+// import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -22,7 +22,7 @@ public class programRestController {
     public Map<String, Object> info() {
         Map<String, Object> data = new HashMap<>();
 
-        Empleado empleado = new Empleado("Jeremy", "Salas", "Estudiante", "Costa Rica", 20, 20206060, 1);
+        Empleado empleado = new Empleado("Jeremy", "Salas", "Estudiante", "Costa Rica", 20, 20206060, 1, "Castaño");
 
         data.put("empleado", empleado);
         return data;

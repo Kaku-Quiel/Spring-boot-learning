@@ -14,13 +14,21 @@
     <br>
     
     <ul>
-        <li><strong>Nombre: </strong> <span th:text="${empleado.getNombre()}"></span></li>
-        <li><strong>Apellido: </strong> <span th:text="${empleado.getApellido()}"></span></li>
-        <li><strong>Puesto: </strong> <span th:text="${empleado.getPuesto()}"></span></li>
-        <li><strong>Dirección: </strong> <span th:text="${empleado.getDireccion()}"></span></li>
-        <li><strong>Teléfono: </strong> <span th:text="${empleado.getTelefono()}"></span></li>
-        <li><strong>ID: </strong> <span th:text="${empleado.getId()}"></span></li>
-        <li><strong>Edad: </strong> <span th:text="${empleado.getEdad()}"></span></li>
+        <li><strong>Nombre: </strong><span th:text="${empleado.getNombre()}"></span></li>
+        <li><strong>Apellido: </strong><span th:text="${empleado.getApellido()}"></span></li>
+        <li><strong>Puesto: </strong><span th:text="${empleado.getPuesto()}"></span></li>
+        <li><strong>Dirección: </strong><span th:text="${empleado.getDireccion()}"></span></li>
+        <li><strong>Teléfono: </strong><span th:text="${empleado.getTelefono()}"></span></li>
+        <li><strong>ID: </strong><span th:text="${empleado.getId()}"></span></li>
+        <li><strong>Edad: </strong><span th:text="${empleado.getEdad()}"></span></li>
+        <hr>
+        <li>
+            <strong>Color de pelo: </strong>
+            <span th:text="${empleado.getPelo() != null ? empleado.getPelo() : 'Es calvo'}"></span>
+        </li>
     </ul>
+
+
+    
 </body>
 </html>
