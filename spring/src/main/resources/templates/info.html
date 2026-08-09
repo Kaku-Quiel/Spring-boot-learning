@@ -28,7 +28,33 @@
         </li>
     </ul>
 
-
+    <h1>Lista de Empleados</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Dirección</th>
+                <th>Puesto</th>
+                <th>Edad</th>
+                <th>Teléfono</th>
+                <th>Departamento</th>
+                <th>Pelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="empleado : ${Empleados}">
+                <td th:text="${empleado.nombre}"></td>
+                <td th:text="${empleado.apellido}"></td>
+                <td th:text="${empleado.direccion}"></td>
+                <td th:text="${empleado.puesto}"></td>
+                <td th:text="${empleado.edad}"></td>
+                <td th:text="${empleado.telefono}"></td>
+                <td th:text="${empleado.id}"></td>
+                <td th:text="${empleado.getPelo() != null ? empleado.getPelo() : 'Es calvo'}"></td>
+            </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
