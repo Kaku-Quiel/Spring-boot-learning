@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTO Transfer</title>
+</head>
+<body>
+    <h1>DTO PRACTICE</h1>
+    <p>Transferencia de datos con DTO</p>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <!-- Se puede acceder a todos los metodos de la clase (aunque sea modificacion) -->
+    <!-- <h2 th:text="${dto.setId('123')}"></h2> -->
+    
+    <h2 th:text="${dto.getName()}"></h2>
+    <h2 th:text="${dto.getId()}"></h2>
+
+</body>
+</html>

@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.springlearning.spring.models.Empleado;
+import com.springlearning.spring.models.DTO.DTO;
+
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController
@@ -23,4 +27,11 @@ public class programRestController {
         data.put("empleado", empleado);
         return data;
     }
+
+    @GetMapping("/dto")
+    public DTO transferDto() {
+        DTO dto = new DTO("U1", "Jeremy");
+        return dto;
+    }
+    
 }
