@@ -21,5 +21,4 @@ public class requestParamaController {
 
         return dto;
     }
-    
 }
